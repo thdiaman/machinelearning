@@ -58,7 +58,7 @@ In terms of other prerequisites etc., you are advised to have the following:
 ## IDE Prerequisites
 As an IDE, you can use anything you want. I use [Spyder](https://pythonhosted.org/spyder/)
 for this, which is also preinstalled in the distributions mentioned above.
-Having said this, to correctly run all the exampless in Spyder (with IPython), you may
+Having said this, to correctly run all the examples in Spyder (with IPython), you may
 have to select Tools --> Preferences and inside the IPython console and the Graphics tab
 set Backend to Automatic. This is shown in the following screenshot:
 
