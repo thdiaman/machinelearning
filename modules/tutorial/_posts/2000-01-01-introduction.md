@@ -9,5 +9,6 @@ before starting this tutorial.
 
 Check the presentation below for an introduction to Machine Learning with Python.
 
-Click [here]({{site.baseurl}}/presentations/MachineLearningPython.pdf) to download the presentation.
+Click <a target="_blank" href="{{site.baseurl}}/presentations/MachineLearningPython.pdf">here</a>
+to download the presentation.
 
