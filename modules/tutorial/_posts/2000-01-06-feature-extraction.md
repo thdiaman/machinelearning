@@ -7,7 +7,7 @@ published: true
 
 ## Algorithm Description
 Check <a target="_blank" href="{{site.baseurl}}/presentations/FeatureExtraction.pdf">here</a>
-for a presentation on the algorithm and the relevant info.
+for a presentation on the method and the relevant info.
 
 ## Example 1 - Feature Extraction
 ### Dataset
