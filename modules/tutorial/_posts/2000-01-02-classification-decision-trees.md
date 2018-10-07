@@ -16,7 +16,7 @@ This example uses the tennis dataset, which can be downloaded
 Save the dataset in a folder and let's start coding.
 
 ### Solution
-Click <a target="_blank" href="{{site.dataurl}}/DecisionTree/decision_tree.py">here</a>
+Click <a target="_blank" href="{{site.dataurl}}/DecisionTrees/decision_tree.py">here</a>
 to download the solution to this example problem.
 
 ## Example 2 - Numerical Data
@@ -26,7 +26,7 @@ The dataset of this example can be downloaded
 Save the dataset in a folder and let's start coding.
 
 ### Solution
-Click <a target="_blank" href="{{site.dataurl}}/DecisionTree/decision_tree_full.py">here</a>
+Click <a target="_blank" href="{{site.dataurl}}/DecisionTrees/decision_tree_full.py">here</a>
 to download the solution to this example problem.
 
 ## Exercise
@@ -41,4 +41,4 @@ data = pd.DataFrame(data=np.c_[iris['data'], iris['target']], columns=iris['feat
 
 To make the problem harder, use only the first two columns of the dataset.
 Try this before you check the solution
-(<a target="_blank" href="{{site.dataurl}}/DecisionTree/decision_tree_exercise.py">here</a>)
+(<a target="_blank" href="{{site.dataurl}}/DecisionTrees/decision_tree_exercise.py">here</a>)
