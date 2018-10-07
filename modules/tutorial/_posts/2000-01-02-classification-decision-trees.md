@@ -41,4 +41,4 @@ data = pd.DataFrame(data=np.c_[iris['data'], iris['target']], columns=iris['feat
 
 To make the problem harder, use only the first two columns of the dataset.
 Try this before you check the solution
-(<a target="_blank" href="{{site.dataurl}}/DecisionTrees/decision_tree_exercise.py">here</a>)
+(<a target="_blank" href="{{site.dataurl}}/DecisionTrees/decision_tree_exercise.py">here</a>).

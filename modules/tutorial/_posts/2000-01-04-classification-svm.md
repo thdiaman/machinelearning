@@ -22,4 +22,4 @@ to download the solution to this example problem.
 ## Exercise
 Can we perform the same analysis for the C parameter of the SVM? 
 Try this before you check the solution
-(<a target="_blank" href="{{site.dataurl}}/SVM/svm_exercise.py">here</a>)
+(<a target="_blank" href="{{site.dataurl}}/SVM/svm_exercise.py">here</a>).
