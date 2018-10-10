@@ -12,7 +12,7 @@ for a presentation on the algorithm and the relevant info.
 ## Example
 ### Dataset
 The dataset for this example can be downloaded
-<a target="_blank" href="{{site.dataurl}}/KMeans/kdata.csv">here</a>.
+<a target="_blank" href="{{site.dataurl}}/KMeans/gre.csv">here</a>.
 Save the dataset in a folder and let's start coding.
 
 ### Solution
@@ -22,7 +22,7 @@ to download the solution to this example problem.
 ## Exercise
 Can we perform the same analysis on a different dataset? 
 The dataset for this exercise can be downloaded
-<a target="_blank" href="{{site.dataurl}}/KMeans/kdata_ex.csv">here</a>.
+<a target="_blank" href="{{site.dataurl}}/KMeans/gre_ex.csv">here</a>.
 
 Try this before you check the solution
 (<a target="_blank" href="{{site.dataurl}}/KMeans/kmeans_ex.py">here</a>).
