@@ -4,7 +4,7 @@ title: References
 
 # References
 
-This page contains useful resources about Deep Learning with Python.
+This page contains useful resources about Machine Learning with Python.
 It also contains any references used to create this tutorial.
 For the presentations, the source of the material is always given
 as a footer. So, this page contains only sources for the different source
