@@ -1,7 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
-from scipy.cluster.hierarchy import dendrogram, linkage, fcluster
 from sklearn.preprocessing import MinMaxScaler
+from scipy.cluster.hierarchy import dendrogram, linkage, fcluster
 
 # Read the data
 data = pd.read_csv("europe.csv", sep=';')

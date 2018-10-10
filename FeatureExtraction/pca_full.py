@@ -3,10 +3,10 @@ import pandas as pd
 from sklearn import datasets
 import matplotlib.pyplot as plt
 from sklearn.decomposition import PCA
+from sklearn.preprocessing import MinMaxScaler
 from sklearn.metrics import classification_report
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.model_selection import train_test_split  
-from sklearn.preprocessing import MinMaxScaler
 
 # Read data
 pdata = pd.read_csv("wine.csv", sep=';')

@@ -6,21 +6,22 @@ from sklearn.metrics import accuracy_score
 from sklearn.model_selection import train_test_split, cross_val_score
 
 # Read the data
-data = pd.read_csv("data.csv", sep=';')
+data = pd.read_csv("loans.csv", sep=';')
+columns = data.columns.values
 X = data.iloc[:, 0:2]
 y = data.iloc[:, 2]
 
 # Split to training set and test set
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.20, random_state=42)
-traindata = pd.DataFrame(data=np.c_[X_train, y_train], columns=['V0', 'V1', 'target'])
+traindata = pd.DataFrame(data=np.c_[X_train, y_train], columns=columns)
 
 # Plot data
 fig, ax = plt.subplots()
-groups = traindata.groupby('target')
+groups = traindata.groupby(columns[2])
 for name, group in groups:
     ax.plot(group.iloc[:, 0], group.iloc[:, 1], marker='o', linestyle='', label=name)
-ax.set_xlabel('V0')
-ax.set_ylabel('V1')
+ax.set_xlabel(columns[0])
+ax.set_ylabel(columns[1])
 ax.legend()
 
 # Create meshgrid
