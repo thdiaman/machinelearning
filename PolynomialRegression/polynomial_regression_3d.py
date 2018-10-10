@@ -8,17 +8,21 @@ from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 from mpl_toolkits.mplot3d import Axes3D
 
 # Read data
-data = pd.read_csv("data3d.csv", sep=';')
-X = data.iloc[:, 0:2]
-y = data.iloc[:, 2]
+data = pd.read_csv("ad_data_3d.csv", sep=';')
 
 # Plot data
-#fig = plt.figure()
-#ax = Axes3D(fig)
-#ax.scatter(x, y, z, color='b') 
-#plt.show()
+fig = plt.figure()
+ax = Axes3D(fig)
+a, b, c = data.columns.values
+for index, row in data.iterrows():
+    ax.scatter(row[a], row[b], row[c], color='b') 
+ax.set_xlabel(a)
+ax.set_ylabel(b)
+ax.set_zlabel(c)
 
 # Apply linear regression model
+X = data.iloc[:, 0:2]
+y = data.iloc[:, 2]
 model = LinearRegression()
 model.fit(X, y)
 y_pred = model.predict(X)
