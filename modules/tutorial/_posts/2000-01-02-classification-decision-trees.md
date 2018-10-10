@@ -12,7 +12,7 @@ for a presentation on the algorithm and the relevant info.
 ## Example 1 - Categorical Data
 ### Dataset
 This example uses the tennis dataset, which can be downloaded
-<a target="_blank" href="{{site.dataurl}}/DecisionTrees/data.csv">here</a>.
+<a target="_blank" href="{{site.dataurl}}/DecisionTrees/weather.csv">here</a>.
 Save the dataset in a folder and let's start coding.
 
 ### Solution
@@ -22,7 +22,7 @@ to download the solution to this example problem.
 ## Example 2 - Numerical Data
 ### Dataset
 The dataset of this example can be downloaded
-<a target="_blank" href="{{site.dataurl}}/DecisionTrees/treedata.csv">here</a>.
+<a target="_blank" href="{{site.dataurl}}/DecisionTrees/weatherfull.csv">here</a>.
 Save the dataset in a folder and let's start coding.
 
 ### Solution
