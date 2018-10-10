@@ -22,7 +22,7 @@ to download the solution to this example problem.
 ## Example 2 - Classification using Feature Extraction
 ### Dataset
 The dataset of this example can be downloaded
-<a target="_blank" href="{{site.dataurl}}/FeatureExtraction/data.csv">here</a>.
+<a target="_blank" href="{{site.dataurl}}/FeatureExtraction/wine.csv">here</a>.
 Save the dataset in a folder and let's start coding.
 
 ### Solution
