@@ -6,14 +6,20 @@ from sklearn.decomposition import PCA
 from sklearn.metrics import classification_report
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.model_selection import train_test_split  
+from sklearn.preprocessing import MinMaxScaler
 
 # Read data
-pdata = pd.read_csv("data.csv", sep=';')
+pdata = pd.read_csv("wine.csv", sep=';')
 
 # Split the data
 trainingdata, testdata = train_test_split(pdata, test_size=0.30, random_state=2)
 X_train, Y_train = trainingdata.iloc[:, 0:-1], trainingdata.iloc[:, -1]
 X_test, Y_test = testdata.iloc[:, 0:-1], testdata.iloc[:, -1]
+
+# Scale the data
+scaler = MinMaxScaler()
+X_train = scaler.fit_transform(X_train)
+X_test = scaler.transform(X_test)
 
 # Apply classifier
 model = KNeighborsClassifier(n_neighbors=4)
