@@ -12,7 +12,7 @@ for a presentation on the algorithm and the relevant info.
 ## Example
 ### Dataset
 The dataset of this example can be downloaded
-<a target="_blank" href="{{site.dataurl}}/SVM/data.csv">here</a>.
+<a target="_blank" href="{{site.dataurl}}/SVM/loans.csv">here</a>.
 Save the dataset in a folder and let's start coding.
 
 ### Solution
