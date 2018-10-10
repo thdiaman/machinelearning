@@ -17,6 +17,11 @@ code parts of each section/example of this tutorial.
 - <a target="_blank" href="https://www.amazon.com/Python-Machine-Learning-Sebastian-Raschka/dp/1783555130">Python Machine Learning</a>
 by Sebastian Raschka
 
+## Dataset Sources
+
+- <a target="_blank" href="https://archive.ics.uci.edu/ml/index.php">UCI Machine Learning Repository</a>
+- <a target="_blank" href="https://www.kaggle.com/datasets">kaggle Datasets</a>
+
 ## Software
 
 - <a target="_blank" href="http://www.numpy.org/">Numpy</a>
