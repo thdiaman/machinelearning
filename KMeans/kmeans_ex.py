@@ -5,13 +5,13 @@ from sklearn.cluster import KMeans
 from sklearn.metrics import silhouette_samples, silhouette_score
 
 # Read data
-kdata = pd.read_csv("kdata_ex.csv", sep=';')
+kdata = pd.read_csv("gre_ex.csv", sep=';')
 
 # Plot the data
 fig, ax = plt.subplots()
 ax.scatter(kdata.iloc[:, 0], kdata.iloc[:, 1])
-plt.xlabel('X')
-plt.ylabel('Y')
+plt.xlabel(kdata.columns.values[0])
+plt.ylabel(kdata.columns.values[1])
 
 # Apply kmeans
 kmeans = KMeans(n_clusters=4)
@@ -24,8 +24,8 @@ fig, ax = plt.subplots()
 ax.scatter(kdata.iloc[:, 0], kdata.iloc[:, 1], c=labels)
 centers = kmeans.cluster_centers_
 plt.scatter(centers[:, 0], centers[:, 1], c='black', marker='+', s=100);
-plt.xlabel('X')
-plt.ylabel('Y')
+plt.xlabel(kdata.columns.values[0])
+plt.ylabel(kdata.columns.values[1])
 
 # Silhouette
 silhouette = silhouette_score(kdata, labels)
