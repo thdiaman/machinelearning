@@ -22,7 +22,7 @@ to download the solution to this example problem.
 ## Exercise
 Can we perform the same analysis on a real dataset? 
 The dataset for this exercise is the percentage of votes for republican
-governments for different yeards and can be downloaded
+governments for different years and can be downloaded
 <a target="_blank" href="{{site.dataurl}}/HierarchicalClustering/votes_repub.csv">here</a>.
 
 Try this before you check the solution
