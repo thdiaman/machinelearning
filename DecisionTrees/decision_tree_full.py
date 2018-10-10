@@ -8,15 +8,15 @@ from sklearn.tree import DecisionTreeClassifier, export_graphviz
 from sklearn.metrics import classification_report, confusion_matrix
 
 # Read the data
-data = pd.read_csv("treedata.csv", sep=';', dtype='float')
+data = pd.read_csv("weatherfull.csv", sep=';', dtype='float')
 
 # Plot the data
 fig, ax = plt.subplots()
-groups = data.groupby('Y')
+groups = data.groupby('Play')
 for name, group in groups:
     ax.plot(group.iloc[:, 0], group.iloc[:, 1], marker='o', linestyle='', label=name)
-ax.set_xlabel('X1')
-ax.set_ylabel('X2')
+ax.set_xlabel('Temperature')
+ax.set_ylabel('Humidity')
 ax.legend()
 
 # Split the data

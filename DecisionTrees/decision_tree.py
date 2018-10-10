@@ -3,7 +3,7 @@ import pandas as pd
 from sklearn.tree import DecisionTreeClassifier, export_graphviz
 
 # Read the data
-data = pd.read_csv("data.csv", sep=';', dtype='category')
+data = pd.read_csv("weather.csv", sep=';', dtype='category')
 
 # Transform the data
 #print(data)
