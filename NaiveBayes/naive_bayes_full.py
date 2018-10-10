@@ -10,6 +10,15 @@ data = pd.read_csv("data.csv", sep=';')
 X = data.iloc[:, 0:-1]
 y = data.iloc[:, -1]
 
+# Plot the data
+#fig, ax = plt.subplots()
+#groups = data.groupby('Y')
+#for name, group in groups:
+#    ax.plot(group.iloc[:, 0], group.iloc[:, 1], marker='o', linestyle='', label=name)
+#ax.set_xlabel('X1')
+#ax.set_ylabel('X2')
+#ax.legend()
+
 # Split the data
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.20, random_state=42)
 
