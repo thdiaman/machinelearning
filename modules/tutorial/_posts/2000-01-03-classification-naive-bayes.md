@@ -22,7 +22,7 @@ to download the solution to this example problem.
 ## Example 2 - Numerical Data
 ### Dataset
 The dataset of this example can be downloaded
-<a target="_blank" href="{{site.dataurl}}/NaiveBayes/data.csv">here</a>.
+<a target="_blank" href="{{site.dataurl}}/NaiveBayes/trafficfull.csv">here</a>.
 Save the dataset in a folder and let's start coding.
 
 ### Solution
