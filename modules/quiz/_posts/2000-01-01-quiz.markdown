@@ -3,4 +3,13 @@ title: Quiz
 ---
 
 # Quiz
-Under construction
+Time to find out what you have learned by this tutorial!
+
+Click <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSc4JaIAe7hjA6g7J-19RsgAVi3IObjTr7WPdit8EphV4RvLXg/viewform?usp=sf_link">here</a>
+to start the quiz.
+
+<!--iframe 
+		src="https://docs.google.com/forms/d/e/1FAIpQLSc4JaIAe7hjA6g7J-19RsgAVi3IObjTr7WPdit8EphV4RvLXg/viewform?embedded=true"
+		width="700" height="5900" frameborder="0" marginheight="0" marginwidth="0">
+	Loading...
+</iframe-->
