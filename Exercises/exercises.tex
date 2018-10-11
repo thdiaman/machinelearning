@@ -1,0 +1,179 @@
+\documentclass[10pt,twoside,a4paper,openany]{memoir}
+
+\setlrmarginsandblock{2.35cm}{2.35cm}{*}
+\setulmarginsandblock{2.35cm}{2.35cm}{*}
+\renewcommand{\baselinestretch}{1.05}
+\checkandfixthelayout
+
+\makechapterstyle{box}{
+  \renewcommand*{\printchaptername}{}
+  \renewcommand*{\printchapternum}{}
+  \renewcommand*{\printchaptertitle}[1]{\vspace{-2.5cm}\chaptitlefont\thechapter.\ ##1\vspace{-1cm}}
+}
+\chapterstyle{box}
+
+\setsecnumdepth{subsubsection}
+
+\usepackage{graphicx}
+
+\usepackage{listings}
+
+
+% Default fixed font does not support bold face
+\DeclareFixedFont{\ttb}{T1}{txtt}{bx}{n}{9.5} % for bold
+\DeclareFixedFont{\ttm}{T1}{txtt}{m}{n}{10}  % for normal
+
+% Custom colors
+\usepackage{color}
+\definecolor{deepblue}{rgb}{0,0,0.5}
+\definecolor{deepred}{rgb}{0.6,0,0}
+\definecolor{deepgreen}{rgb}{0,0.5,0}
+\lstset{
+language=Python,
+basicstyle=\ttm,
+otherkeywords={self},             % Add keywords here
+keywordstyle=\ttb\color{deepblue},
+emph={MyClass,__init__},          % Custom highlighting
+emphstyle=\ttb\color{deepred},    % Custom highlighting style
+stringstyle=\color{deepgreen},
+frame=tb,                         % Any extra options here
+showstringspaces=false,
+breaklines=true
+%basicstyle=\small%\linespread{1.15}\sffamily
+}
+
+\usepackage[hidelinks,bookmarksopen=true,bookmarksopenlevel=-1]{hyperref}
+
+\usepackage{qrcode}
+
+\let\cleardoublepage\clearpage
+
+\makeatletter
+\def\maketitle{%
+  \null
+  \thispagestyle{empty}%
+  \vfill
+
+  \begin{center}
+    \normalfont
+    \centering
+
+    \begin{minipage}{\linewidth}
+    \centering
+    \includegraphics[scale=0.3]{images/box-icon.png}
+    \end{minipage}
+
+    \vskip 1cm
+    
+    {\huge\@title\par}%
+    \hrulefill\par
+    \vskip 0.25cm
+    {\LARGE Exercises}
+    \vskip 0.75cm
+
+    {\LARGE\raggedleft Manual by \@author\par}%
+  \end{center}%
+  \vfill
+  \null
+  \clearpage
+  }
+\makeatother
+\author{Themistoklis Diamantopoulos}
+\title{Machine Learning with Python}
+\date{}
+
+\makepagestyle{headings}
+\makeevenhead{headings}{\thepage}{}{MACHINE LEARNING WITH PYTHON}
+\makeoddhead{headings}{MACHINE LEARNING WITH PYTHON}{}{\thepage}
+
+\begin{document}
+
+\maketitle
+
+\frontmatter
+
+\null
+\thispagestyle{empty}%
+\vfill
+
+\begin{flushleft}
+\textit{Machine Learning with Python}
+
+Notes for a tutorial compiled by Themistoklis Diamantopoulos
+
+\vskip 0.2cm
+
+For more information check website:
+
+\url{https://thdiaman.github.io/machinelearning/}
+
+or check the following QR code:
+
+\vskip 0.2cm
+
+\XeTeXLinkBox{\qrcode[height=25mm]{https://thdiaman.github.io/machinelearning/}}
+
+\bigskip
+
+THE MATERIAL USED IN THIS TUTORIAL IS GATHERED FROM A SET OF DIFFERENT SOURCES THAT ARE REFERRED IN THE REFERENCES SECTION
+
+\vskip 0.2cm
+ALL RIGHTS RESERVED TO THE ORIGINAL OWNERS
+
+\vskip 0.2cm
+THIS DOCUMENT IS ONLY TO SERVE AS A MANUAL FOR THE CONTENT OF THE TUTORIAL
+
+\vskip 0.2cm
+COPYRIGHT 2018
+
+\end{flushleft}
+
+
+
+\mainmatter
+
+\chapter{Classification with Decision Trees}
+
+\section{Exercise}
+\lstinputlisting{../DecisionTrees/decision_tree_exercise.py}
+
+
+\chapter{Classification with SVM}
+
+\section{Exercise}
+\lstinputlisting{../SVM/svm_exercise.py}
+
+
+\chapter{Polynomial Regression}
+
+\section{Exercise}
+\lstinputlisting{../PolynomialRegression/polynomial_regression_3d.py}
+
+
+\chapter{Feature Selection}
+
+\section{Exercise}
+\lstinputlisting{../FeatureSelection/feature_selection_chi.py}
+
+
+\chapter{Clustering with K-Means}
+
+\section{Exercise}
+\lstinputlisting{../KMeans/kmeans_ex.py}
+
+
+\chapter{HierarchicalClustering}
+
+\section{Exercise}
+\lstinputlisting{../HierarchicalClustering/hier_ex.py}
+
+
+\backmatter
+
+\renewcommand*{\printchaptertitle}[1]{\chaptitlefont#1}
+\chapter*{References}
+Any references used to create this tutorial can be found at the following address:\\
+\href{https://thdiaman.github.io/machinelearning/modules/references/references/}{https://thdiaman.github.io/machinelearning/modules/references/references/}
+
+
+\end{document}
