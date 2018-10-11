@@ -4,12 +4,17 @@ from math import sqrt
 import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
 from sklearn.preprocessing import PolynomialFeatures
-from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
+from sklearn.metrics import mean_squared_error
 
 # Read data
 data = pd.read_csv("ac_data.csv", sep=';')
 X = data.iloc[:, 0].values.reshape(-1, 1)
 y = data.iloc[:, 1]
+
+# Plot the data
+#plt.plot(X, y, 'o')
+#plt.xlabel(data.columns.values[0])
+#plt.ylabel(data.columns.values[1])
 
 # Create test space
 X_test = np.linspace(X.min(), X.max(), 100).reshape(-1, 1)
@@ -27,16 +32,17 @@ degree = 4
 poly_features = PolynomialFeatures(degree = degree, include_bias = False)
 model = LinearRegression()
 model.fit(poly_features.fit_transform(X), y)
-y_pred_d3 = model.predict(poly_features.fit_transform(X_test))
+y_pred_d4 = model.predict(poly_features.fit_transform(X_test))
 
 # Show equation for second model
 print('Equation: y = ' + str(model.intercept_) + ' + ' + \
         ' + '.join(str(model.coef_[d]) + ' * x^' + str(d+1) for d in range(degree)))
 
 # Plot the two models
+plt.figure()
 plt.plot(X, y, 'o')
 plt.plot(X_test, y_pred_d1, linewidth=3, label="degree=1")
-plt.plot(X_test, y_pred_d3, linewidth=3, label="degree=" + str(degree))
+plt.plot(X_test, y_pred_d4, linewidth=3, label="degree=" + str(degree))
 plt.legend()
 plt.xlabel(data.columns.values[0])
 plt.ylabel(data.columns.values[1])
@@ -53,6 +59,7 @@ for degree in degrees:
 	y_pred = model.predict(X_poly)
 	errors.append(sqrt(mean_squared_error(y, y_pred)))
 
+plt.figure()
 plt.plot(degrees, errors)
 plt.xlabel('Degree')
 plt.ylabel('RMSE')

@@ -12,6 +12,7 @@ fig, ax = plt.subplots()
 ax.scatter(kdata.iloc[:, 0], kdata.iloc[:, 1])
 plt.xlabel(kdata.columns.values[0])
 plt.ylabel(kdata.columns.values[1])
+plt.show()
 
 # Apply kmeans
 kmeans = KMeans(n_clusters=3)

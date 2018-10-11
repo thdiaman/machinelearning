@@ -34,9 +34,9 @@ print(confusion_matrix(y_test, y_pred))
 print(classification_report(y_test, y_pred))
 
 # Plot the tree
-dot_data = export_graphviz(model, out_file=None, feature_names=X_train.columns.values, \
-                           proportion=True, rounded=True)
-graph = pydotplus.graph_from_dot_data(dot_data)  
+dot_data = export_graphviz(model, out_file=None, proportion=True, \
+                           feature_names=X_train.columns.values,rounded=True)
+graph = pydotplus.graph_from_dot_data(dot_data)
 # Visualize using IPython
 #from IPython.display import Image, display
 #display(Image(graph.create_png()))

@@ -19,6 +19,7 @@ for index, row in data.iterrows():
 ax.set_xlabel(a)
 ax.set_ylabel(b)
 ax.set_zlabel(c)
+plt.show()
 
 # Apply linear regression model
 X = data.iloc[:, 0:2]
@@ -28,7 +29,8 @@ model.fit(X, y)
 y_pred = model.predict(X)
 
 # Show equation for first model
-print('Equation: y = ' + str(model.intercept_) + ' + ' + \
+print('Equation: y = ' + \
+        str(model.intercept_) + ' + ' + \
         str(model.coef_[0]) + ' * x ' + ' + ' + \
         str(model.coef_[1]) + ' * y ')
 
@@ -42,8 +44,9 @@ print("Coefficient of Determination: %.2f" %r2_score(y, y_pred))
 degree = 2
 poly_features = PolynomialFeatures(degree = degree, include_bias = False)
 model = LinearRegression()
-model.fit(poly_features.fit_transform(X), y)
-y_pred = model.predict(poly_features.fit_transform(X))
+X_poly = poly_features.fit_transform(X)
+model.fit(X_poly, y)
+y_pred = model.predict(X_poly)
 
 # Show equation for second model
 print('\nEquation: y = ' + str(model.intercept_) + ' + ' + \

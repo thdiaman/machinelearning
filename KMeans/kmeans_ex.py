@@ -45,6 +45,7 @@ for i in range(len(centers)):
     y_lower = y_upper + 10
 ax.axvline(x=silhouette, color="red", linestyle="--")
 ax.set_yticks([])
+#plt.show()
 
 # Select number of clusters
 fig, ax = plt.subplots()
