@@ -4,7 +4,6 @@ import matplotlib.pyplot as plt
 from scipy.cluster.hierarchy import dendrogram, linkage, fcluster
 
 # Read the data
-X = np.array([[50,30], [24,10], [85,70], [71,80], [60,78], [70,55], [28,91]])
 data = pd.read_csv("data.csv", sep=';')
 indexes = ["x" + str(i + 1) for i in range(len(data))]
 
@@ -17,7 +16,7 @@ ax.set_xlabel('X')
 ax.set_ylabel('Y')
 
 # Apply hierarchical clustering
-Z = linkage(X, method='single') # or complete
+Z = linkage(data, method='single') # or complete
 
 # Plot the dendrogram
 fig, ax = plt.subplots()
