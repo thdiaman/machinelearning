@@ -1,5 +1,5 @@
 # basic configuration
-baseurl: ''
+baseurl: 'https://thdiaman.github.io/machinelearning'
 dataurl: 'https://raw.githubusercontent.com/thdiaman/machinelearning/master'
 markdown: kramdown
 permalink: /:categories/:title/
