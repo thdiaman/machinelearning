@@ -10,6 +10,7 @@ data = pd.DataFrame(data=np.c_[iris['data'], iris['target']], columns=iris['feat
 X, y = data.iloc[:, 0:4], data.iloc[:, 4]
 
 # Print the correlation matrix
+pd.set_option('display.width', 100)
 print(X.corr())
 
 # Plot the data

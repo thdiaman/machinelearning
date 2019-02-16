@@ -22,17 +22,17 @@ dot_data = export_graphviz(model, out_file=None, feature_names=X_train.columns.v
                            class_names=["No", "Yes"], proportion=True, rounded=True)
 graph = pydotplus.graph_from_dot_data(dot_data)  
 # Visualize using IPython
-from IPython.display import Image, display
-display(Image(graph.create_png()))
+#from IPython.display import Image, display
+#display(Image(graph.create_png()))
 # Visualize using matplotlib
-#from io import BytesIO
-#import matplotlib.pyplot as plt
-#import matplotlib.image as mpimg
-#plt.figure()
-#img = mpimg.imread(BytesIO(graph.create_png()))
-#imgplot = plt.imshow(img,  aspect='equal')
-#plt.axis('off')
-#plt.show()
+from io import BytesIO
+import matplotlib.pyplot as plt
+import matplotlib.image as mpimg
+plt.figure()
+img = mpimg.imread(BytesIO(graph.create_png()))
+imgplot = plt.imshow(img,  aspect='equal')
+plt.axis('off')
+plt.show()
 
 # Make a new prediction
-print(model.predict([[0, 0, 0]]))
+#print(model.predict([[0, 0, 0]]))
