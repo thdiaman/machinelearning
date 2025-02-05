@@ -56,7 +56,7 @@ In terms of other prerequisites etc., you are advised to have the following:
 - a nice attitude towards learning, because it's going to be fun!
 
 ## IDE Prerequisites
-As an IDE, you can use anything you want. I use [Spyder](https://pythonhosted.org/spyder/)
+As an IDE, you can use anything you want. I use [Spyder](https://www.spyder-ide.org)
 for this, which is also preinstalled in the distributions mentioned above.
 Having said this, to correctly run all the examples in Spyder (with IPython), you may
 have to select Tools --> Preferences and inside the IPython console and the Graphics tab
